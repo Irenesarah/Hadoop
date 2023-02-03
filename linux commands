@@ -1,0 +1,20 @@
+1.pwd #it shows the current directory
+2.ls      # "ls" command to know what files are in the directory you are in
+3.cd       #"cd" command to go to a directory.
+4. mkdir #command when you need to create a folder or a directory
+5.rm         #Use the rm command to delete files and directories. 
+6.touch    #The touch command is used to create a file. It can be anything, from an empty txt file to an empty zip file. 
+7. man & --help     # It shows the manual pages of the command.
+8.cp        # Use the cp command to copy files through the command line. It takes two arguments: The first is the location of the file to be copied, the second is where to copy.
+9. mv   # Use the mv command to move files through the command line. We can also use the mv command to rename a file.
+10. locate  #The locate command is used to locate a file in a Linux system, just like the search command in Windows. 
+11. echo   # The "echo" command helps us move some data, usually text into a file.
+12. cat   # Use the cat command to display the contents of a file. It is usually used to easily view programs.
+13. nano, vi, jed â€” nano and vi are already installed text editors in the Linux command line. The nano command is a good text editor that denotes keywords with color and can recognize most languages. And vi is simpler than nano. You can create a new file or modify a file using this editor.
+14.  sudo â€” A widely used command in the Linux command line, sudo stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the sudo command.
+15. df   # Use the df command to see the available disk space in each of the partitions in your system.
+16. du   # Use du to know the disk usage of a file in your system.
+17. tar  # Use tar to work with tarballs (or files compressed in a tarball archive) in the Linux command line. It has a long list of uses. It can be used to compress and uncompress different types of tar archives like .tar, .tar.gz, .tar.bz2,etc. It works on the basis of the arguments given to it.
+18. zip, unzip # Use zip to compress files into a zip archive, and unzip to extract files from a zip archive.
+19. uname # Use uname to show the information about the system your Linux distro is running. Using the command uname  prints most of the information about the system. This prints the kernel release date, version, processor type, etc.
+20. hostname # Use hostname to know your name in your host or network. Basically, it displays your hostname and IP address. Just typing hostname gives the output
