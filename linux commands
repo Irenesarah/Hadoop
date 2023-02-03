@@ -10,7 +10,7 @@
 10. locate  #The locate command is used to locate a file in a Linux system, just like the search command in Windows. 
 11. echo   # The "echo" command helps us move some data, usually text into a file.
 12. cat   # Use the cat command to display the contents of a file. It is usually used to easily view programs.
-13. nano, vi, jed â€” nano and vi are already installed text editors in the Linux command line. The nano command is a good text editor that denotes keywords with color and can recognize most languages. And vi is simpler than nano. You can create a new file or modify a file using this editor.
+13. nano, vi, jed  nano and vi are already installed text editors in the Linux command line. The nano command is a good text editor that denotes keywords with color and can recognize most languages. And vi is simpler than nano. You can create a new file or modify a file using this editor.
 14.  sudo â€” A widely used command in the Linux command line, sudo stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the sudo command.
 15. df   # Use the df command to see the available disk space in each of the partitions in your system.
 16. du   # Use du to know the disk usage of a file in your system.
