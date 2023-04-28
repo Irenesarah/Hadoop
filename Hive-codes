@@ -1,0 +1,28 @@
+Hive
+Show databases;
+Create database if not exits A;
+Use A;
+#check location from hdfs
+Hadoop fs –ls  /user/hive/warehouse
+
+Managed tables;
+Create table if not exits emp(empno int,ename string,sal float,comm float,dpno int) row format delimited fields terminated by ‘,’;
+Describe emp
+Load data local inpath ‘/home/Irene/hadoopdata/emp.csv’ into table emp;
+Select * from emp;
+External table
+ Create table if not exits ext_emp(empno int,ename string,sal float,comm float,dpno int) row format delimited fields terminated by ‘,’ location ‘/user/Irene/data/emp’;
+Table will be stored under /user/hive/warehouse/A.db/ext_emp/emp
+load data local inpath ‘/home/Irene/hadoopdata/empdata’ into table ext_emp;
+
+Partitioning
+Set hive.exec.dynamic.partition.mode;
+Set hive.exec.dynamic.partition.mode=nonstrict;
+Create table if not exits emp_dept(empno int,ename string,sal float,comm float,dpno int) partitioned by (dpno int) row format delimited fields terminated by ‘,’
+Insert into table emp_dept partition(dpno)select * from emp;
+Check
+Hadoop fs –ls /user/hive/warehouse/A.db
+Bucketing
+Create table  dept_buckk(empno int,ename string,sal float,comm float,dpno int) clustered by (dpno int) into 3 buckets row format delimited fields terminated by ‘,’;
+Set hive.enforce.bucketing=true;
+
